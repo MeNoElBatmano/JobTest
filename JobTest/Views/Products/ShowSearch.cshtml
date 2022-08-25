@@ -1,0 +1,36 @@
+﻿
+<h4>Saerch Product</h4>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="ShowSearchResults">
+                <div class="text-danger"></div>
+                <div class="form-group">
+                    <label for="seacthPhrase" class="control-label"></label>
+                    <input name="seacthPhrase" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+            </form>
+        </div>
+        
+        
+       
+    </div>
+    <div class="row gx-2">
+        <div class="my-5 col-1"><button type="submit" class="btn btn-primary">Submit</button></div>
+        <div class="my-5 col-2"><a class="btn btn-primary" asp-action="Index">Back to List</a></div>
+    
+    
+    </div>
+    
+</div>
+
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
